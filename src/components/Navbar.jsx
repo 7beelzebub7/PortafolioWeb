@@ -86,7 +86,7 @@ export default function Navbar() {
         }}
       >
         <img
-          src="/images/logo.png"
+          src="./images/logo.png"
           alt="Logo"
           className="glow-animation"
           style={{
@@ -98,7 +98,7 @@ export default function Navbar() {
           }}
         />
         <img
-          src="/images/logoLetra.png"
+          src="./images/logoLetra.png"
           alt="Cumulonimbus Productor Multimedia"
           className="glow-animation"
           style={{
