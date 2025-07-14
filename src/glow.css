@@ -1,0 +1,23 @@
+@keyframes glowMove {
+  0% {
+    filter: drop-shadow(0 0 0.1px #d7d9d9)
+            drop-shadow(0 0 1px #d7d9d9)
+            drop-shadow(0 0 0.1px #d7d9d9);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 0.1px #7292a6)
+            drop-shadow(0 0 1px #7292a6)
+            drop-shadow(0 0 0.1px #7292a6);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 0.1px #d7d9d9)
+            drop-shadow(0 0 1px #d7d9d9)
+            drop-shadow(0 0 0.1px #d7d9d9);
+  }
+}
+
+.glow-animation {
+  animation: glowMove 3s ease-in-out infinite;
+}
