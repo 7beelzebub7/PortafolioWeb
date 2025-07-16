@@ -1,4 +1,4 @@
-const rainAudio = new Audio("/sounds/rain.mp3");
+const rainAudio = new Audio("./sounds/rain.mp3");
 rainAudio.loop = true;
 rainAudio.volume = 0.4;
 

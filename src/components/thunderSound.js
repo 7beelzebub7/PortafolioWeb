@@ -1,4 +1,4 @@
-const thunderAudio = new Audio("/sounds/thunder.mp3");
+const thunderAudio = new Audio("./sounds/thunder.mp3");
 thunderAudio.volume = 0.8;
 
 export function playThunder() {
