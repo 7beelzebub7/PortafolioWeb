@@ -61,7 +61,7 @@ export default function Contacto() {
         className="card"
         style={{ "--glow-color": "#E1306C" }}
       >
-        <img src="/images/instagram.svg" alt="Instagram" className="icon" />
+        <img src="./images/instagram.svg" alt="Instagram" className="icon" />
       </a>
 
       <a
@@ -71,7 +71,7 @@ export default function Contacto() {
         className="card"
         style={{ "--glow-color": "#ffffff" }}
       >
-        <img src="/images/github.svg" alt="GitHub" className="icon" />
+        <img src="./images/github.svg" alt="GitHub" className="icon" />
       </a>
 
       <a
@@ -81,7 +81,7 @@ export default function Contacto() {
         className="card"
         style={{ "--glow-color": "#1769FF" }}
       >
-        <img src="/images/behance.svg" alt="Behance" className="icon" />
+        <img src="./images/behance.svg" alt="Behance" className="icon" />
       </a>
     </div>
   );

@@ -58,12 +58,12 @@ export default function Navbar() {
       }
     : isTablet
     ? {
-        top: "0.1rem",   // ← cambia aquí posición final en tablet
-        left: "-1rem",
+        top: "0.1rem",     // ← cambia aquí posición final en tablet
+        left: "-2rem",
         transform: `translate(0, 0) scale(${logoEndScale})`,
       }
     : {
-        top: "-2.8rem",  // ← posición final en PC (no editar si está bien)
+        top: "-2.8rem",    // ← posición final en PC (no editar si está bien)
         left: "-2rem",
         transform: "translate(0, 0)",
       };
@@ -93,7 +93,7 @@ export default function Navbar() {
             height: `${logoStartSize}rem`,
             transform: progress < 1
               ? "scale(1)"
-              : `scale(${logoEndScale})`, // ✅ se aplica correctamente según la versión
+              : `scale(${logoEndScale})`,
             transition: "transform 0.5s ease-out, height 0.5s ease-out",
           }}
         />
@@ -120,20 +120,14 @@ export default function Navbar() {
             fontSize,
             padding,
             borderRadius,
-
-            // ✏️ POSICIÓN FINAL MÓVIL
             ...(isMobile && {
               top: `${1 - progress * 0.3}rem`,
               right: `${1 + progress * 12}rem`,
             }),
-
-            // ✏️ POSICIÓN FINAL TABLET
             ...(isTablet && {
               top: `${1 - progress * -0.5}rem`,
               right: `${2 + progress * 13.4}rem`,
             }),
-
-            // ✏️ POSICIÓN PC (animada)
             ...(!isMobile && !isTablet && {
               top: `${2 - progress * -0.1}rem`,
               right: `${4 - progress * -19}rem`,
@@ -160,20 +154,14 @@ export default function Navbar() {
             fontSize,
             padding,
             borderRadius,
-
-            // ✏️ POSICIÓN FINAL MÓVIL
             ...(isMobile && {
               top: `${39.3 - progress * 38.6}rem`,
               right: `${1 + progress * 5.8}rem`,
             }),
-
-            // ✏️ POSICIÓN FINAL TABLET
             ...(isTablet && {
               top: `${39 - progress * 37.5}rem`,
               right: `${2 + progress * 5.9}rem`,
             }),
-
-            // ✏️ POSICIÓN PC
             ...(!isMobile && !isTablet && {
               top: `${39 - progress * 37}rem`,
               right: `${3.5 - progress * -8.4}rem`,
@@ -201,22 +189,46 @@ export default function Navbar() {
             padding,
             borderRadius,
 
-            // ✏️ POSICIÓN FINAL MÓVIL
+            // 📱 MÓVIL
             ...(isMobile && {
               top: `${39 - progress * 38.3}rem`,
               left: `${1 + progress * 22}rem`,
             }),
 
-            // ✏️ POSICIÓN FINAL TABLET
-            ...(isTablet && {
+            // 💊 TABLET PEQUEÑA
+            ...(windowWidth >= 640 && windowWidth < 720 && {
               top: `${39 - progress * 37.5}rem`,
-              left: `${1 + progress * 35}rem`,
+              left: `${1 + progress * 33}rem`,
             }),
 
-            // ✏️ POSICIÓN PC
-            ...(!isMobile && !isTablet && {
+            // 💊 TABLET MEDIA
+            ...(windowWidth >= 720 && windowWidth < 840 && {
               top: `${39 - progress * 37}rem`,
-              left: `${3 - progress * -79}rem`,
+              left: `${1 + progress * 36}rem`,
+            }),
+
+            // 💊 TABLET GRANDE
+            ...(windowWidth >= 840 && windowWidth < 1024 && {
+              top: `${39 - progress * 37}rem`,
+              left: `${1 + progress * 40}rem`,
+            }),
+
+            // 🖥 LAPTOP ESTÁNDAR
+            ...(windowWidth >= 1024 && windowWidth < 1280 && {
+              top: `${39 - progress * 37}rem`,
+              left: `${1 + progress * 55}rem`,
+            }),
+
+            // 💻 PC GRANDE
+            ...(windowWidth >= 1280 && windowWidth < 1536 && {
+              top: `${39 - progress * 37}rem`,
+              left: `${1 + progress * 80.5}rem`,
+            }),
+
+            // 🖥 ULTRAWIDE
+            ...(windowWidth >= 1536 && {
+              top: `${39 - progress * 37}rem`,
+              left: `${1 + progress * 91}rem`,
             }),
           }}
         >
@@ -231,6 +243,7 @@ export default function Navbar() {
             Contacto
           </span>
         </Link>
+
       </div>
 
       {/* 📦 CONTENIDO PRINCIPAL */}

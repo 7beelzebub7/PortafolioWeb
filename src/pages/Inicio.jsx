@@ -5,8 +5,8 @@ import ClimaAmbiente from "../components/ClimaAmbiente";
 const cardData = [
   {
     id: 5,
-    title: "Mensaje especial",
-    description: "Este es un párrafo largo que representa una carta solo con texto...",
+    title: "Bienvenidos",
+    description: "Soy beelzebub productor multimedia y esto es cumulonimbus, un lugar donde en una tormenta de habilidades encontrarás una lluvia de ideas y truenos de creatividad.",
     isTextOnly: true,
     initialScale: 0.8,
     finalScale: 1,
@@ -14,15 +14,15 @@ const cardData = [
   {
     id: 1,
     title: "Coco",
-    description: "una de mis habilidades es la creación de personajes y la ilustración...",
+    description: "una de mis habilidades es la creación de personajes y la ilustración, este es COCO un proyecto personal basado en mi representado en un cocodrilo",
     image: "./images/coco.png",
     initialScale: 0.3,
     finalScale: 0.8,
   },
   {
     id: 2,
-    title: "Caja 2",
-    description: "Contenido de la caja 2",
+    title: "Diseño y Mockups",
+    description: "Me gusta ilustrar y más si es para que se imprima, ya que un diseño impreso es una idea inmortalizada. este es un diseño de espuelas de caballero.",
     image: "./images/mockupEspuelasDeCaballero.png",
     style: { width: "700px", height: "400px" },
     initialScale: 0.2,
@@ -30,19 +30,27 @@ const cardData = [
   },
   {
     id: 3,
-    title: "Caja 3",
-    description: "Contenido de la caja 3",
+    title: "Diseño Web",
+    description: "No está de más decir que una de mis habilidades es el diseño frontEnd usando HTML5, CSS3, JavaScript y librerías como React, aunque no me quedo ahí ya que me estoy adentrando en el backEnd aprendiendo Laravel.",
     video: "./video/visual.mp4",
     initialScale: 0.5,
     finalScale: 0.9,
   },
   {
     id: 4,
-    title: "Caja 4",
-    description: "Contenido de la caja 4",
+    title: "Fotografía",
+    description: "LA fotografía y el audiovisual me gustan aunque debo reconocer que no soy tan bueno como en otras cosas. Esta fué una sesión de fotos en las que se puso en práctica la planimetría y angulación",
     image: "./images/photo.jpg",
     initialScale: 0.4,
     finalScale: 0.9,
+  },
+  {
+    id: 6,
+    title: "",
+    description: "Cumulonimbus se basa en explorar todas esas lluvias y truenos que se generan en la mente de las personas y que las mantienen ocultas para unirlas y crear la tormenta más hermosa y caotica de todas.",
+    isTextOnly: true,
+    initialScale: 0.8,
+    finalScale: 1,
   },
 ];
 
